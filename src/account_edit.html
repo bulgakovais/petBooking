@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_pad.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+        type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <a href="#"><img class="navbar-logo" src="../img/logo.svg" alt="picture"></a>
+            <a href="#" class="nav-btn">Войти</a>
+        </nav>
+    </header>
+    <section class="page-wrapper">
+        <div class="flex-card-profile">
+            <div class="profile-aside">
+                <img src="https://picsum.photos/200/300" alt="">
+                <div class="review-block">
+                    <input class="btn btn-add" type="submit" value="Загрузить фото">
+                </div>
+            </div>
+            <div class="profile-content">
+                <h1 class="text-lev2">Редактирование профиля</h1>
+                <div class="form">
+                    <div class="text-field">
+                        <label class="text-lev3" for="name">Имя</label>
+                        <input class="text-field__input" id="name" type="text" placeholder="Введите имя"
+                            value="Наталья">
+                    </div>
+                    <div class="text-field">
+                        <label class="text-lev3" for="about">Обо мне</label>
+                        <textarea id="about" name="reviews" rows="10" placeholder="Введите информацию о себе"
+                            maxlength="1000"
+                            required>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae incidunt nostrum quasi, eaque, similique sint corruptideserunt explicabo harum vero natus ullam eligendi omnis atque perferendis sequi ea, voluptatibus distinctiorepudiandae! Doloremque repudiandae quibusdam nam dolorum sed, vel delectus minima sequi fugit, aliquam a tempore ea.Laboriosam dolore officia eum numquam voluptatum delectus nemo rem, quo neque rerum assumenda tenetur officiis deseruntlibero, ea quisquam ullam in quod quidem quas, sint fuga porro odio nam. Illum iste labore a vero accusantium essebeatae quidem sapiente, ipsum et perferendis voluptatem molestias ipsam est commodi, ea natus veniam, incidunt impeditdolore debitis.</textarea>
+                        <div class="text-field__counter"></div>
+                    </div>
+                    <div class="text-field">
+                        <div class="text-lev3">Спецификация услуги</div>
+                        <div class="form-hor">
+                            <div class="form">
+                                <label class="text-field__label" for="weight">Размер принимаемой собаки:</label>
+                                <input class="custom-checkbox" type="checkbox" id="weight-mini" name="weight"
+                                    value="mini">
+                                <label for="weight-mini">Mini (до 3 кг)</label>
+                                <input class="custom-checkbox" type="checkbox" id="weight-small" name="weight"
+                                    value="small">
+                                <label for="weight-small">Small (3-5 кг)</label>
+                                <input class="custom-checkbox" type="checkbox" id="weight-medium" name="weight"
+                                    value="medium">
+                                <label for="weight-medium">Medium (5-10 кг))</label>
+                                <input class="custom-checkbox" type="checkbox" id="weight-big" name="weight"
+                                    value="big">
+                                <label for="weight-big">Big (более 10 кг)</label>
+                            </div>
+                            <div class="form">
+                                <label class="text-field__label" for="anypet">Есть другие животные:</label>
+                                <input class="custom-radio" type="radio" id="anypet-yes" name="anypet" value="yes">
+                                <label for="anypet-yes">Да</label>
+                                <input class="custom-radio" type="radio" id="anypet-no" name="anypet" value="no">
+                                <label for="anypet-no">Нет</label>
+                            </div>
+                            <!-- <div class="form">
+                                <label class="text-field__label" for="ready_walk">Готовность к выгулу собак:</label>
+                                <input class="custom-radio" type="radio" id="ready_walk-yes" name="ready_walk"
+                                    value="yes">
+                                <label for="ready_walk-yes">Да</label>
+                                <input class="custom-radio" type="radio" id="ready_walk-no" name="ready_walk"
+                                    value="no">
+                                <label for="ready_walk-no">Нет</label>
+                            </div>
+                            <div class="form">
+                                <label class="text-field__label" for="aviary">Наличие крытого вольера:</label>
+                                <input class="custom-radio" type="radio" id="aviary-yes" name="aviary" value="yes">
+                                <label for="aviary-yes">Да</label>
+                                <input class="custom-radio" type="radio" id="aviary-no" name="aviary" value="no">
+                                <label for="aviary-no">Нет</label>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="text-field">
+                        <label class="text-lev3" for="city">Контакты</label>
+                        <div class="form-hor datalist">
+                            <input class="text-field__input" list="cities" name="city" id="city"
+                                placeholder="Введите город">
+                            <datalist id="cities">
+                                <option value="Москва">
+                                </option>
+                                <option value="Санкт-Петербург">
+                                </option>
+                                <option value="Казань">
+                                </option>
+                                <option value="Екатеринбург">
+                                </option>
+                            </datalist>
+                            <input class="text-field__input" id="address" type="text" placeholder="Введите адрес"
+                                value="ул. Центральная, д. 37">
+                            <input type="text" class="text-field__input mask-phone" placeholder="Введите телефон"
+                                value="+7-999-999-99-99">
+                            <input class="btn" type="submit" value="Сохранить">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const elemLogin = document.querySelector('#login');
+        const elemCounter = elemLogin.nextElementSibling;
+        const maxLength = elemLogin.maxLength;
+        const updateCounter = (e) => {
+            const len = e ? e.target.value.length : 0;
+            elemCounter.textContent = `${len} / ${maxLength}`;
+        }
+        updateCounter();
+        elemLogin.addEventListener('keyup', updateCounter);
+        elemLogin.addEventListener('keydown', updateCounter);
+    </script>
+    <script>
+        $('.mask-phone').mask('+7-999-999-99-99');
+    </script>
+</body>

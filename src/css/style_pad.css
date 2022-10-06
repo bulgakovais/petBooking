@@ -1,0 +1,139 @@
+@media (min-width: 767px) and (max-width: 1140px) {
+  .container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  /* 959px */
+  .page-wrapper {
+    width: 100%;
+  }
+
+  .home-page {
+    padding: 29px 50px 120px;
+  }
+
+  .home-img {
+    /* width: 250px; */
+    width: 50%;
+    margin-right: 2%;
+  }
+  .home-img img {
+    height: auto;
+    width: 90%;
+  }
+  .home-page h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .home-title {
+    margin-left: 5%;
+  }
+  .page-img {
+    width: 250px;
+  }
+
+  .index-form {
+    gap: 12px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .index-form__flexWrapper {
+    gap: 6%;
+    width: 80%;
+  }
+
+  .MuiInputBase-root div {
+    padding: calc(0.375rem + var(--border) * 2) 0.75rem;
+    box-sizing: border-box;
+  }
+
+  .text-field__margin {
+    margin-left: 3%;
+  }
+
+  .form-hor {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px 0;
+    justify-content: space-between;
+  }
+
+  .settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .index-form .text-field__input,
+  .index-form .text-field__select {
+    /* width: 90%; */
+    font-size: 14px;
+  }
+
+  .flex-card a {
+    max-width: 100%;
+  }
+
+  .text-lev1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .text-lev2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .flex-card-profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .profile-aside:nth-child(1) {
+    width: 300px;
+    order: 0;
+  }
+
+  .profile-aside:nth-child(3) {
+    width: 300px;
+    order: 2;
+  }
+
+  .profile-content:nth-child(2) {
+    width: 50%;
+    order: 1;
+  }
+
+  .profile-content:nth-child(4) {
+    width: 50%;
+    order: 3;
+  }
+
+  .profile-aside img {
+    border-radius: var(--radius);
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  /* __________MAIN DESCRIPTION__________ */
+
+  .description-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

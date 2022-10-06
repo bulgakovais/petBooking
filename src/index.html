@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_pad.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <a href="#"><img class="navbar-logo" src="../img/logo.svg" alt="picture"></a>
+            <a href="#" class="nav-btn">Войти</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="home-page">
+            <h1>Сервис поиска догситтеров</h1>
+            <img class="page-img" src="../img/home-dog.svg" alt="picture">
+        </div>
+        <form class="index-form" action="#">
+            <div class="text-field datalist">
+                <!-- <label class="text-field__label text-caps text-center" for="city">Город</label>
+                        <select class="text-field__select" id="city">
+                            <option value="" disabled selected hidden>Введите город</option>
+                            <option value="">Москва</option>
+                            <option value="">Санкт-Петербург</option>
+                            <option value="">Екатеринбург</option>
+                            <option value="">Казань</option>
+                        </select> -->
+                <label class="text-field__label text-caps text-center" for="city">Город</label>
+                <input class="text-field__input datalist" list="cities" name="city" id="city"
+                    placeholder="Введите город">
+                <datalist id="cities">
+                    <option value="Москва">
+                    </option>
+                    <option value="Санкт-Петербург">
+                    </option>
+                    <option value="Казань">
+                    </option>
+                    <option value="Екатеринбург">
+                    </option>
+                </datalist>
+            </div>
+            <div class="text-field">
+                <label class="text-field__label text-caps text-center" for="date_in">Дата заезда</label>
+                <input class="text-field__input" id="date_in" type="date">
+            </div>
+            <div class="text-field">
+                <label class="text-field__label text-caps text-center" for="date_out">Дата выезда</label>
+                <input class="text-field__input" id="date_out" type="date">
+            </div>
+            <div class="text-field">
+                <label class="text-field__label text-caps text-center" for="size">Размер</label>
+                <select class="text-field__select" id="size">
+                    <option value="" disabled selected hidden>Введите размер</option>
+                    <option value="">Mini (до 3 кг)</option>
+                    <option value="">Small (3-5 кг)</option>
+                    <option value="">Medium (5-10 кг)</option>
+                    <option value="">Big (более 10 кг)</option>
+                </select>
+            </div>
+            <input class="btn" type="submit" value="НАЙТИ">
+        </form>
+    </div>
+    <section class="page-wrapper">
+        <h2 class="text-center">Наши догситтеры</h2>
+        <div class="flex-card">
+            <a href="profile.html" class="card">
+                <img src="https://picsum.photos/200/300" alt="">
+                <div class="card-content">
+                    <h3 class="text-lev3">Наталья</h3>
+                    <p>У Лукоморья дуб зеленый. Златая цепь на дубе том. И днем. и ночью кот ученый все ходит по цепи
+                        кругом</p>
+                    <span>
+                        <div class="address text-additional">г. Кременчуг-Константиновское</div>
+                        <div class="address text-additional">ул. Центральная, д. 37</div>
+                    </span>
+                </div>
+                <div class="card-info">
+                    <div class="rating">
+                        <span>
+                            <!-- <img src="img/foot.svg" alt="">
+                            256 -->
+                        </span>
+                        <span>
+                            <img src="img/star.svg" alt="">
+                            4.7
+                        </span>
+                    </div>
+                    <div class="price">
+                        от 1500 ₽
+                    </div>
+                    <!-- <button class="btn">89999999999</button> -->
+                </div>
+            </a>
+            <a href="profile.html" class="card">
+                <img src="https://picsum.photos/200/300" alt="">
+                <div class="card-content">
+                    <h3 class="text-lev3">Наталья</h3>
+                    <p>У Лукоморья дуб зеленый. Златая цепь на дубе том. И днем. и ночью кот ученый все ходит по цепи
+                        кругом</p>
+                    <span>
+                        <div class="address text-additional">г. Кременчуг-Константиновское</div>
+                        <div class="address text-additional">ул. Центральная, д. 37</div>
+                    </span>
+                </div>
+                <div class="card-info">
+                    <div class="rating">
+                        <span>
+                            <!-- <img src="img/foot.svg" alt="">
+                            256 -->
+                        </span>
+                        <span>
+                            <img src="img/star.svg" alt="">
+                            4.7
+                        </span>
+                    </div>
+                    <div class="price">
+                        от 1500 ₽
+                    </div>
+                    <!-- <button class="btn">89999999999</button> -->
+                </div>
+            </a>
+            <a href="profile.html" class="card">
+                <img src="https://picsum.photos/200/300" alt="">
+                <div class="card-content">
+                    <h3 class="text-lev3">Наталья</h3>
+                    <p>У Лукоморья дуб зеленый. Златая цепь на дубе том. И днем. и ночью кот ученый все ходит по цепи
+                        кругом</p>
+                    <span>
+                        <div class="address text-additional">г. Кременчуг-Константиновское</div>
+                        <div class="address text-additional">ул. Центральная, д. 37</div>
+                    </span>
+                </div>
+                <div class="card-info">
+                    <div class="rating">
+                        <span>
+                            <!-- <img src="img/foot.svg" alt="">
+                            256 -->
+                        </span>
+                        <span>
+                            <img src="img/star.svg" alt="">
+                            4.7
+                        </span>
+                    </div>
+                    <div class="price">
+                        от 1500 ₽
+                    </div>
+                    <!-- <button class="btn">89999999999</button> -->
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>

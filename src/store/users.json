@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Таня",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, maxime.",
+      "phone": "+79999999999",
+      "img": "",
+      "city": "Москва",
+      "address": "ул. Гагарина, дом 1",
+      "petSize": ["mini", "small"],
+      "otherAnimals": "да"
+    },
+    {
+      "id": 2,
+      "name": "Вика",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem vitae architecto officia nisi facere.",
+      "phone": "+79999999999",
+      "img": "",
+      "city": "Санкт-Петербург",
+      "address": "",
+      "petSize": ["mini", "small", "medium", "big"],
+      "otherAnimals": "нет"
+    },
+    {
+      "id": 3,
+      "name": "Ирина",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "phone": "+79999999999",
+      "img": "user2.jpg",
+      "city": "Вологда",
+      "address": "проспект Ленина, д. 32",
+      "petSize": ["big"],
+      "otherAnimals": "да"
+    }
+  ]
+}
